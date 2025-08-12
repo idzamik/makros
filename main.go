@@ -23,7 +23,7 @@ func main() {
 	}
 
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.SetBasicAuth("idzamik", string("TOKEN"))
+	req.SetBasicAuth("GIT_NAME", string("GIT_GHP_TOKEN"))
 	resp, err := client.Do(req)
 	if err != nil {
 		log.Fatal(err)
